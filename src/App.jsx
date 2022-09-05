@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from './img/people.svg'
-
+import { Button } from './styles'
 
 function App() {
   const [coment, setComents] = React.useState()
@@ -20,7 +20,7 @@ function App() {
     <div>
       <img src={Image} alt="imagem-pessoas" />
       <textarea onChange={handleTextArea}></textarea>
-      <button isOn={coment}  onClick={handleClickButton}>Comentar</button>
+      <Button isOn={coment}  onClick={handleClickButton}>Comentar</Button>
 
       <ul>
         {
