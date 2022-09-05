@@ -32,3 +32,15 @@ export const Button = styled.button `
   cursor: pointer;
   transition: 0.5s;
 `
+
+export const List = styled.ul `
+  li {
+    background: rgba(255, 255, 255, 0.14);
+    width: 342px;
+    height: 68px;
+    margin-top: 20px;
+    list-style-type: none;
+    color: white;
+    padding: 5px;
+  }
+`

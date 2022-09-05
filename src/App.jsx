@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from './img/people.svg'
-import { Button, Container } from './styles'
+import { Button, Container, List } from './styles'
 
 function App() {
   const [coment, setComents] = React.useState()
@@ -22,13 +22,13 @@ function App() {
       <textarea onChange={handleTextArea}></textarea>
       <Button isOn={coment}  onClick={handleClickButton}>Comentar</Button>
 
-      <ul>
+      <List>
         {
           allComents.map((cmt, index) => (
             <li key={index}>{cmt}</li>
           ))
         }
-      </ul>
+      </List>
     </Container>
   );
 }
